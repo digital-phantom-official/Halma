@@ -122,6 +122,11 @@ public class Field extends Image {
             if(field.colorChar == POSSIBLE)
                 field.colorChar = NONE;
     }
+
+    public LinkedList<Field> getNeighbours() {
+        return neighbours;
+    }
+
     public void createNeighbours() {
 
         if(!Play.getInstance().getBoard().isSquare()){
